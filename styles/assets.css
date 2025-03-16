@@ -1,0 +1,81 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: whitesmoke;
+    border-radius: 100%;
+    border: 3px solid whitesmoke
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 3px solid rgb(90, 90, 91);
+}
+
+.btn>img {
+    height: 24px;
+    width: 24px;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(./fonts/boogaloo_lexend/Boogaloo/Boogaloo-Regular.ttf);
+}
+
+h1 {
+    background-color: hsl(206deg 30.34% 29.11%);
+    color: #df8222;
+    padding: 16px;
+    text-align: center;
+    font-size: 36px;
+}
+
+main {
+    background: hsl(206deg 37.2% 24.21%);
+    color: #ffd0a0;
+    padding: 48px;
+    flex-grow: 1;
+}
+
+.notes_container{
+    padding-top: 48px;
+}
+
+.notes_container_input{
+    display: flex;
+    padding-bottom: 64px;
+    padding-top: 16px;
+}
+
+.archiv_container_input{
+    display: flex;
+    padding-bottom: 64px;
+    padding-top: 16px;
+}
+
+.trash_container_input{
+    display: flex;
+    padding-top: 16px;
+}
+
+footer {
+    background-color: hsl(206deg 30.34% 29.11%);
+    color: #e9b075;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.footer_img {
+    width: 128px;
+    filter: invert(1);
+}
+
+.footer_pTag {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: -24px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/notepad-306312_640.png">
+   
+    <script src="./scripts/templates.js"></script>
+    <script src="./script.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/note.css">
+
+</head>
+
+<body onload="renderNotes()">
+
+    <header>
+        <h1>Notizblock</h1>
+    </header>
+    
+    <main>
+        <div class="inputbox">
+            <form>
+                <label for="Title">Title:</label>
+                <input class="input_title" id="note_input_title" type="text" required>
+                <label for="Content">Content:</label>
+                <input class="input_content" id="note_input" type="text">
+                <button class="save_btn" onclick="addNote()">Save Note</button>
+            </form>
+        </div>
+
+        <div class="notes_container">
+            <h2>NOTES</h2>
+            <div class="notes_container_input" id="content">
+
+            </div>
+        </div>
+
+        <div class="archiv_container">
+            <h2>ARCHIV</h2>
+            <div class="archiv_container_input" id="archiv_content">
+
+            </div>
+        </div>
+
+        <div class="trash_container">
+            <h2>TRASH</h2>
+            <div class="trash_container_input" id="trash_content">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img class="footer_img" src="./assets/img/developer akademie-logo.png" alt="Developer Akademie Logo">
+        <p class="footer_pTag"> © 2024 von Wladislav Bender</p>
+    </footer>
+
+</body>
+
+</html>
